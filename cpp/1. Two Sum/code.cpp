@@ -1,3 +1,16 @@
+//
+//  main.cpp
+//  Compiler
+//
+//  Created by João Carlos Magalhães on 24/03/22.
+//
+
+//#include <bits/stdc++.h>
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -11,6 +24,36 @@ public:
                 }
             }
         }
-    return answer;
+        return answer;
     }
 };
+
+int main() {
+
+  //vector declaration
+  vector<int> nums;
+  int size, e, target;
+
+  cout << "What is the size of the vector?" << endl;
+  cin >> size;
+
+  cout << "Input the elements of the vector" << endl;
+
+  for(int i = 0; i < size; i++){
+    cin >> e;
+    nums.push_back(e);
+  }
+
+  cout << "What is the target?" << endl;
+  cin >> target;
+
+  Solution obj;
+  vector<int>ans = obj.twoSum(nums, target);
+  for (int i = 0; i < ans.size(); i++){
+    cout << ans[i] << endl;
+  }
+  
+  
+  return 0;
+    
+}
