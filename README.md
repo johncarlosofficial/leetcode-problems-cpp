@@ -17,6 +17,6 @@ This repository is under construction. The videos are not available yet.
 
 The benefits of using C++ are that it is a very efficient language and its standard library contains a large collection of data structures and algorithms.
 
-| #   | Title                                             | Code                                                                                       | Explanation                                                                                      | Level | Languages | Video                           |
-| --- | ------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ----- | --------- | ------------------------------- |
-| 1   | [Two Sum](https://leetcode.com/problems/two-sum/) | [GitHub](https://github.com/joaocarlos-mag/leetcode/blob/main/cpp/1.%20Two%20Sum/code.cpp) | [GitHub](https://github.com/joaocarlos-mag/leetcode/blob/main/cpp/1.%20Two%20Sum/Explanation.md) | 🟢    | C++       | [YouTube](https://youtube.com/) |
+| #   | Title                                             | Solution                                                                                   | Level | Languages | Video                           |
+| --- | ------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----- | --------- | ------------------------------- |
+| 1   | [Two Sum](https://leetcode.com/problems/two-sum/) | [GitHub](https://github.com/joaocarlos-mag/leetcode/blob/main/cpp/1.%20Two%20Sum/code.cpp) | 🟢    | C++       | [YouTube](https://youtube.com/) |
