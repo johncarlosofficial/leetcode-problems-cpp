@@ -23,20 +23,11 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Only one valid answer exists.
 ```
 
-#### Constraints
-
-```
-- `2 <= nums.length <= 104`
-- `109 <= nums[i] <= 109`
-- `109 <= target <= 109`
-- **Only one valid answer exists.**
-```
-
 ### Follow-up
 
 Can you come up with an algorithm that is less than `O(n2)` time complexity?
 
-#### Solution
+### Solution
 
 📌 As the array may not be sorted, we'll have to check each element until find the solution. So, the time complexity is O(n).
 
