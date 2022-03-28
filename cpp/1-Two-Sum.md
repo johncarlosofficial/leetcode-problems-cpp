@@ -1,4 +1,4 @@
-# 1. Two Sum
+# [1. Two Sum](https://leetcode.com/problems/two-sum/)
 
 Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
 
@@ -23,9 +23,26 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 Only one valid answer exists.
 ```
 
+#### Constraints
+
+```
+- `2 <= nums.length <= 104`
+- `109 <= nums[i] <= 109`
+- `109 <= target <= 109`
+- **Only one valid answer exists.**
+```
+
+### Follow-up
+
+Can you come up with an algorithm that is less than `O(n2)` time complexity?
+
+#### Solution
+
 📌 As the array may not be sorted, we'll have to check each element until find the solution. So, the time complexity is O(n).
 
-📌 We'll create an array to store the numbers. Next, in order to solve the problem, the pair for each element is: _pair = target - current_.
+📌 We'll create an array to store the numbers. Next, in order to solve the problem, the pair for each element is: `pair = target - current`.
+
+📌 The for loop goes through each element, and when we find a match, we add the indices to the `answer` vector using the `push_back` function.
 
 ```cpp
 #include <iostream>
@@ -80,5 +97,3 @@ int main() {
 }
 
 ```
-
-[leetcode website](https://leetcode.com/problems/two-sum/)
