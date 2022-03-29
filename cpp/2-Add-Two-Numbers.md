@@ -30,10 +30,15 @@ It is guaranteed that the list represents a number that does not have leading ze
 ### Solution
 
 📌 We have to Traverse Both Lists & add sum to new list.
+
 📌 Sum is equivalent to `val1 + val2 + carry` from previous Operation.
+
 📌 The resulting node will be `sum%10`.
+
 📌 Carry is updated by `sum/10` for next Opeartion.
+
 📌 Time Complexity `O(n)`.
+
 📌 Space Compelxity `O(max(l1,l2))`.
 
 ```cpp
@@ -45,21 +50,18 @@ public:
 
         int c = 0;
 		//traversing both list till one of the list not reaches NULL
-        while (l1 != NULL ||  l2 != NULL || c)
-        {
+        while (l1 != NULL ||  l2 != NULL || c){
             int sum = 0;
-			// if l1  is not null
+		    // if l1  is not null
 			// add l1-> value to sum
-            if(l1 != NULL)
-            {
+            if(l1 != NULL){
                 sum += l1->val;
                 l1 = l1 -> next;
             }
 
 			// if l2  is not null
 			// add l2-> value to sum
-            if(l2 != NULL)
-            {
+            if(l2 != NULL){
                 sum += l2->val;
                 l2 = l2 -> next;
             }
