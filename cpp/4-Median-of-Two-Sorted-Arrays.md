@@ -34,7 +34,6 @@ nums2.length == n
 1 <= m + n <= 2000
 
 -106 <= nums1[i], nums2[i] <= 106
-
 ```
 
 ### Solution
@@ -55,24 +54,24 @@ public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 
         //merge the two vectors
-        for(int i=0;i<nums2.size();i++){
+        for(int i = 0;i < nums2.size(); i++){
             nums1.push_back(nums2[i]);
         }
 
         //sort the merged vector
         sort(nums1.begin(),nums1.end());
 
-        double median=0.0;
-        int len=nums1.size();
+        double median = 0.0;
+        int len = nums1.size();
         int pointer;
 
 
-        if(len%2==0){   //first case (even)
-            pointer=len/2;
-            median=(nums1[pointer-1]+nums1[pointer])/2.0;
+        if(len%2 == 0){   //first case (even)
+            pointer = len/2;
+            median = (nums1[pointer-1] + nums1[pointer]) /2.0;
         } else{          //second case (odd)
-            pointer=(len+1)/2;
-            median=nums1[pointer-1];
+            pointer = (len+1)/2;
+            median = nums1[pointer-1];
         }
 
         return median;
