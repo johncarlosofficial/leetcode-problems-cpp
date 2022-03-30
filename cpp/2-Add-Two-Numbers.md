@@ -39,7 +39,7 @@ It is guaranteed that the list represents a number that does not have leading ze
 
 📌 Time Complexity `O(n)`.
 
-📌 Space Compelxity `O(max(l1,l2))`.
+📌 Space Complexity `O(max(l1,l2))`.
 
 ```cpp
 class Solution {
