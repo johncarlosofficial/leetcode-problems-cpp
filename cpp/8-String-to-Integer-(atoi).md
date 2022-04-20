@@ -80,14 +80,28 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
 
 ### Solution
 
+📌 First, we'll check if the string is empty.
+
+📌 Then, we'll remove the left blank spaces and extract the substring.
+
+📌 We'll identify if it will be a positive or negative answer.
+
+📌 If there's a sign, the pointer of the substring will start at index `1`.
+
+📌 Inside a while loop, we'll `break` if we find a space or a letter.
+
+📌 The answer is calculated by `ans = ans * 10 + s[i]-'0'`.
+
+📌 Then, we'll check if if the answer is out of 32-bit.
+
 ```cpp
 class Solution {
 public:
     int myAtoi(string s) {
-        if(s.length()==0) return 0;
+        if(s.length()==0) return 0;    //check if the string is empty
 
         int i=0;
-         while(i<s.size() && s[i]== ' ') {
+         while(i<s.size() && s[i]== ' ') {    //remove blank spaces
              i++;
          }
         s = s.substr(i); //i ---> last of string
@@ -95,15 +109,18 @@ public:
         int sign = +1;
         long ans = 0;
 
-        if(s[0] == '-') sign = -1;
+        if(s[0] == '-') sign = -1;        // positive or negative answer
 
         int MAX = INT_MAX, MIN = INT_MIN;
-        i = (s[0] == '+' || s[0] == '-') ? 1 : 0;
+        i = (s[0] == '+' || s[0] == '-') ? 1 : 0;      //the pointer will start at index 0 or 1
 
         while(i < s.length()) {
-            if(s[0] == ' ' || !isdigit(s[i])) break;
+            if(s[0] == ' ' || !isdigit(s[i])) break;   //check if it's a space or a letter
 
+            //formulates the answer
             ans = ans * 10 + s[i]-'0';
+
+            //if the answer is out of 32-bit
             if(sign == -1 && -1*ans < MIN) return MIN;
             if(sign == 1 && ans > MAX) return MAX;
 
