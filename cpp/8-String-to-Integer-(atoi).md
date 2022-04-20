@@ -86,7 +86,7 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
 
 📌 We'll identify if it will be a positive or negative answer.
 
-📌 If there's a sign, the pointer of the substring will start at index `1`.
+📌 If there's a sign, the pointer of the substring will start at index 1.
 
 📌 Inside a while loop, we'll `break` if we find a space or a letter.
 
