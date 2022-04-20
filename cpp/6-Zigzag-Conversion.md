@@ -16,7 +16,7 @@ Write the code that will take a string and make this conversion given a number o
 string convert(string s, int numRows);
 ```
 
-#### Exemple
+#### Exemple 1
 
 ```
 Input: s = "PAYPALISHIRING", numRows = 3

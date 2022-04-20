@@ -2,7 +2,7 @@
 
 Given a string `s`, return the longest palindromic substring in `s`.
 
-#### Exemple
+#### Exemple 1
 
 ```
 Input: s = "babad"

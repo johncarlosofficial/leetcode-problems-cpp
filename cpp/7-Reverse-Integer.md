@@ -4,7 +4,7 @@ Given a signed 32-bit integer `x`, return `x` with its digits reversed. If rever
 
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
-#### Exemple
+#### Exemple 1
 
 ```
 Input: x = 123

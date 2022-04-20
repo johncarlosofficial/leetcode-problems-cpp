@@ -22,7 +22,7 @@ The algorithm for `myAtoi(string s)` is as follows:
 
 - Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
 
-#### Exemple
+#### Exemple 1
 
 ```
 Input: s = "42"
