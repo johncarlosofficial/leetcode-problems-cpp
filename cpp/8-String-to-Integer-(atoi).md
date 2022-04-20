@@ -98,10 +98,13 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
 class Solution {
 public:
     int myAtoi(string s) {
-        if(s.length()==0) return 0;    //check if the string is empty
+        //check if the string is empty
+        if(s.length()==0) return 0;
 
         int i=0;
-         while(i<s.size() && s[i]== ' ') {    //remove blank spaces
+
+        //remove blank spaces
+         while(i<s.size() && s[i]== ' ') {
              i++;
          }
         s = s.substr(i); //i ---> last of string
@@ -109,13 +112,18 @@ public:
         int sign = +1;
         long ans = 0;
 
-        if(s[0] == '-') sign = -1;        // positive or negative answer
+        // positive or negative answer
+        if(s[0] == '-') sign = -1;
 
         int MAX = INT_MAX, MIN = INT_MIN;
-        i = (s[0] == '+' || s[0] == '-') ? 1 : 0;      //the pointer will start at index 0 or 1
+
+        //the pointer will start at index 0 or 1
+        i = (s[0] == '+' || s[0] == '-') ? 1 : 0;
 
         while(i < s.length()) {
-            if(s[0] == ' ' || !isdigit(s[i])) break;   //check if it's a space or a letter
+
+             //check if it's a space or a letter
+            if(s[0] == ' ' || !isdigit(s[i])) break;
 
             //formulates the answer
             ans = ans * 10 + s[i]-'0';
