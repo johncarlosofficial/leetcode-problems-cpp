@@ -98,6 +98,7 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
 class Solution {
 public:
     int myAtoi(string s) {
+
         //check if the string is empty
         if(s.length()==0) return 0;
 
