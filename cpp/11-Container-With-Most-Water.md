@@ -10,7 +10,7 @@ Return the maximum amount of water a container can store.
 
 #### Exemple 1
 
-![question_11.jpg](question_11.jpg)
+![question_11.jpg](images/question_11.jpg)
 
 ```
 Input: height = [1,8,6,2,5,4,8,3,7]
