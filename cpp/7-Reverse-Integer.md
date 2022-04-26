@@ -18,6 +18,13 @@ Input: x = -123
 Output: -321
 ```
 
+#### Exemple 3
+
+```
+Input: x = 120
+Output: 21
+```
+
 #### Constraints
 
 ```
