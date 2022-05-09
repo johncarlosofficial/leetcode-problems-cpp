@@ -54,5 +54,5 @@ public:
         }
         return str.substr(0, count);
     }
-};
+};t
 ```
