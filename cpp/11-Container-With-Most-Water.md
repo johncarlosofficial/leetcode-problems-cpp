@@ -39,24 +39,22 @@ n == height.length
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-      int max = 0;
-      int ans = 0;
-      for (int i = 0; i < height.size() - 1; i++){
-        for (int j = 1; j < height.size(); j++){
-          if (height[i] < height[j]){
-            max = height[i] * (j-i);
-            if (max > ans){
-              ans = max;
+        int n = height.size();
+        int store = 0;
+        int ans = 0;
+        int i=0;
+        int j = n-1;
+        while(i<j){
+            store = min(height[i],height[j]) * (j-i);
+            ans = max(ans,store);
+            if(height[i] < height[j]){
+                i++;
             }
-          } else {
-            max = height[j] * (j-i);
-            if (max > ans){
-              ans = max;
+            else{
+                j--;
             }
-          }
         }
-      }
-      return ans;
+        return ans;
     }
 };
 ```
